@@ -1,0 +1,22 @@
+{
+  "name": "vuepreess",
+  "version": "1.0.0",
+  "description": "VuePreess",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DashISme/VuePreess.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DashISme/VuePreess/issues"
+  },
+  "homepage": "https://github.com/DashISme/VuePreess#readme"
+}
