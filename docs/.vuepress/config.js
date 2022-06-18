@@ -1,4 +1,7 @@
+const moment = require('moment');
+
 module.exports = {
+  base:"/VuePreess/",
   title: 'Hello VuePress',
   description: 'Just playing around',
   head: [
@@ -42,6 +45,18 @@ module.exports = {
         "/":[
           ""
         ]
-      }
-    }
+      },
+     
+    },
+    plugins: [
+      [
+        '@vuepress/last-updated',
+        {
+          transformer: (timestamp) => {
+            moment.locale("zh-cn");
+            return moment(timestamp).format('llll')
+          }
+        }
+      ]
+    ]
   }
